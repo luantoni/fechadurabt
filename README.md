@@ -10,3 +10,8 @@ http://web.inter.nl.net/users/hanscees/bluezhowto.html#whatis
 http://www.heatxsink.com/entry/how-to-pair-a-bluetooth-device-from-command-line-on-linux
 
 
+Como parea iPhone com RPi via bluetooth usando linha de comando:
+
+http://www.wolfteck.com/projects/raspi/iphone/
+
+

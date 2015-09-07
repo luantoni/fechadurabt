@@ -30,4 +30,12 @@ Que usa o WebIOPi:
 
 http://webiopi.trouch.com/index.html
 
+WebIOPi que funciona?
+
+http://brian2012class.nfshost.com/wp-content/uploads/2015/04/webiopi.pdf
+
+Veja Class 35:
+
+http://brian2012class.nfshost.com/where-are-we/
+
 

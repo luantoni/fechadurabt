@@ -1,5 +1,5 @@
 # fechadurabt
-Projeto de fechadura com Raspberry Pi e conexão bluetooth
+Projeto de fechadura com Raspberry Pi e conexão bluetooth (ou Wi-Fi, porque bluetooth no iPhone tá difícil).
 
 Alguns links:
 

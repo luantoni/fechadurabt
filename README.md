@@ -28,6 +28,6 @@ http://www.driscocity.com/idiots-guide-to-a-raspberry-pi-garage-door-opener/
 
 Que usa o WebIOPi:
 
-    http://webiopi.trouch.com/index.html
+http://webiopi.trouch.com/index.html
 
 

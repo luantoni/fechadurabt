@@ -38,4 +38,8 @@ Veja Class 35:
 
 http://brian2012class.nfshost.com/where-are-we/
 
+Versão do node.js pré-compilada para Raspberry Pi:
+
+http://weworkweplay.com/play/raspberry-pi-nodejs/
+
 

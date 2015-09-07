@@ -42,4 +42,7 @@ Versão do node.js pré-compilada para Raspberry Pi:
 
 http://weworkweplay.com/play/raspberry-pi-nodejs/
 
+Projeto que usa node.js com Python:
+
+http://tylerwowen.github.io/pisensors/
 

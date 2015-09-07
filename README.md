@@ -16,15 +16,15 @@ http://www.wolfteck.com/projects/raspi/iphone/
 
 Aplicativo para conectar iPhone com RPi (via Wi-Fi):
 
-    https://github.com/blynkkk/blynk-library/blob/master/docs/Platforms.md#linux-raspberry-pi
+https://github.com/blynkkk/blynk-library/blob/master/docs/Platforms.md#linux-raspberry-pi
 
 Comandando as portas GPIO via Python:
 
-    http://raspi.tv/2013/rpi-gpio-basics-5-setting-up-and-using-outputs-with-rpi-gpio
+http://raspi.tv/2013/rpi-gpio-basics-5-setting-up-and-using-outputs-with-rpi-gpio
 
 Abrindo uma porta de garagem com RPi (em Wi-Fi):
 
-    http://www.driscocity.com/idiots-guide-to-a-raspberry-pi-garage-door-opener/
+http://www.driscocity.com/idiots-guide-to-a-raspberry-pi-garage-door-opener/
 
 Que usa o WebIOPi:
 

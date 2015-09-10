@@ -46,3 +46,6 @@ Projeto que usa node.js com Python:
 
 http://tylerwowen.github.io/pisensors/
 
+Script usando Web.py e GPIO!
+
+http://newfreshpeace.blogspot.com/2013/01/raspberry-pi-gpio-web-interface-using.html

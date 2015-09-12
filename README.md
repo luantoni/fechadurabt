@@ -49,3 +49,11 @@ http://tylerwowen.github.io/pisensors/
 Script usando Web.py e GPIO!
 
 http://newfreshpeace.blogspot.com/2013/01/raspberry-pi-gpio-web-interface-using.html
+
+Chamada de função que funcionou:
+
+    exec  = require('child_process').exec
+
+https://nodejs.org/docs/v0.2.4/api.html
+
+

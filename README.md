@@ -56,4 +56,12 @@ Chamada de função que funcionou:
 
 https://nodejs.org/docs/v0.2.4/api.html
 
+Lendo pinos com gpio:
+
+http://raspberry.io/projects/view/reading-and-writing-from-gpio-ports-from-python/
+
+http://raspi.tv/2013/how-to-use-interrupts-with-python-on-the-raspberry-pi-and-rpi-gpio-part-2
+
+http://raspberrywebserver.com/gpio/using-interrupt-driven-gpio.html
+
 

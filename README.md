@@ -3,6 +3,10 @@ Projeto de fechadura com Raspberry Pi e conexão bluetooth (ou Wi-Fi, porque blu
 
 Alguns links:
 
+Configurando um IP estático:
+
+https://www.modmypi.com/blog/tutorial-how-to-give-your-raspberry-pi-a-static-ip-address
+
 http://www.rpiblog.com/2012/08/bluetooth-pairing-of-raspberry-pi-with.html
 
 http://web.inter.nl.net/users/hanscees/bluezhowto.html#whatis

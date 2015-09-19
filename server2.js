@@ -3,8 +3,8 @@ var querystring = require('querystring');
 var util = require('util');
 var form = require('fs').readFileSync('form.html');
 // Para rodar uma rotina em Python
-var exec = require("child_process").exec;
-var Gpio = require('onoff').Gpio
+// var exec = require("child_process").exec;
+var Gpio = require('onoff').Gpio // GPIO via Javascript
 
 // Ao invés de inicializarmos com 'out'
 // usamos 'high' que é uma variante

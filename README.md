@@ -68,4 +68,6 @@ http://raspi.tv/2013/how-to-use-interrupts-with-python-on-the-raspberry-pi-and-r
 
 http://raspberrywebserver.com/gpio/using-interrupt-driven-gpio.html
 
+Links sobre uso do RPi como fonte de PWM (pulse Width Modulation). Fundamental para controlar servo motores:
 
+https://github.com/sarfata/pi-blaster/

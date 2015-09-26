@@ -71,3 +71,10 @@ http://raspberrywebserver.com/gpio/using-interrupt-driven-gpio.html
 Links sobre uso do RPi como fonte de PWM (pulse Width Modulation). Fundamental para controlar servo motores:
 
 https://github.com/sarfata/pi-blaster/
+
+Tem um ponto sobre o dhcp client do RPi sobre ter 2 clients rodando:
+
+http://superuser.com/questions/924166/dhcp-failure-when-rebooting-rpi-2
+
+removi o dhcpcd5...
+

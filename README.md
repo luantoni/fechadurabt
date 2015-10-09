@@ -78,3 +78,16 @@ http://superuser.com/questions/924166/dhcp-failure-when-rebooting-rpi-2
 
 removi o dhcpcd5...
 
+Colocando o servidor node.js para executar após o boot
+---
+
+Veja esta página: http://www.raspberry-projects.com/pi/pi-operating-systems/raspbian/auto-running-programs
+
+No meu caso editei o /etc/rc.local e acrescentei:
+
+    # Executa o servidor server3.js da fechadura eletrica
+    cd /home/pi/fechadurabt
+    /usr/local/bin/node server3.js &
+    printf "Executando node server3"
+
+logo antes do final do script.

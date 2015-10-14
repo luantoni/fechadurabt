@@ -30,9 +30,13 @@ https://youtu.be/E9Cb50f-zLg
 Preparando o Raspberry Pi
 -----
 
-1. Instale o Raspbian ([link](http://labdegaragem.com/profiles/blogs/tutorial-raspberry-pi-instalando-o-raspbian-raspberry-pi-debian))
+1. Instale o Raspbian
 
-2. 
+	 http://labdegaragem.com/profiles/blogs/tutorial-raspberry-pi-instalando-o-raspbian-raspberry-pi-debian
+
+2. Instale o Node.js 
+
+	http://weworkweplay.com/play/raspberry-pi-nodejs/
 
 
 

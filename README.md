@@ -2,12 +2,12 @@ Fechadura Elétrica com RPi
 ====
 
 Este projeto permite controlar a abertura de uma fechadura 
-elétrica usando um Raspberry Pi
+elétrica usando um Raspberry Pi.
 
 A fechadura elétrica é um dispositivo eletro-mecânico
 onde o destravamento da lingueta da fechadura pode ser
 feito tanto mecanicamente (com uma chave, por exemplo)
-quanto elétricamente, através de um "botão".
+quanto eletricamente, através de um "botão".
 
 O funcionamento de uma fechadura elétrica é mostrado nesse vídeo:
 
@@ -17,10 +17,22 @@ De forma be sucinta, o que vamos fazer é ligar os fios do
 solenoide da fechadura num relê e controlar o relê a partir
 de um programa executando no Raspberry Pi.
 
-Esse programa será acessado através de uma página Web, ou seja,
+O acesso a esse "programa" será acessado através de uma
+página Web, ou seja,
 você poderá abrir um navegador qualquer no seu Smartphone,
 acessar a página Web fornecida pelo Raspberry Pi e a partir
-dali controlar a abertura da fechadura
+dali controlar a abertura da fechadura.
+
+Esse outro vídeo mostra essa idéia em funcionamento:
+
+https://youtu.be/E9Cb50f-zLg
+
+Preparando o Raspberry Pi
+-----
+
+1. Instale o Raspbian ([link](http://labdegaragem.com/profiles/blogs/tutorial-raspberry-pi-instalando-o-raspbian-raspberry-pi-debian))
+
+2. 
 
 
 

@@ -5,12 +5,25 @@ var util = require('util');
 var form = require('fs').readFileSync('form.html');
 var app = express();
 
+
 // set up handlebars view engine
 var handlebars = require('express-handlebars');
 app.engine('handlebars', handlebars({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
 
 app.set('port', process.env.PORT || 8080);
+app.use(express.static(__dirname + '/public'));
+
+// Carrega middleware body-parser
+// app.use(require('body-parser')()); --> deprecated in Express 4.0
+// De acordo com:
+// http://stackoverflow.com/questions/5710358/how-to-get-post-a-query-in-express-js-node-js
+var bodyParser = require('body-parser');
+app.use( bodyParser.json() );
+app.use( bodyParser.urlencoded({
+	extended: true
+}));
+// app.use(express.urlencoded());
 
 var Gpio = require('onoff').Gpio // GPIO via Javascript
 
@@ -27,18 +40,36 @@ function pause(miliseconds) {
 }
 
 
-app.get('/', function(req, res){
-//	res.type('text/plain');
-//	res.send('Laura travel');
+app.get('/porta', function(req, res){
 	res.render('home');
 });
 
+app.get('/aberta', function(req, res){
+	res.render('303');
+});
+
 app.get('/about', function(req, res){
-//	res.type('text/plain');
-//	res.send('Sobre Laura Travel');
 	res.render('about');
 });
 
+app.post('/porta', function(req, res){
+	var senha = req.body.senha;
+//	var senha = req.body.senha;
+	console.log('Recebido '+ senha);
+	if (senha == "senha") { // escolha a senha para abrir a porta
+		///////////////////////////////////////////////
+		console.log(new Date() + ': liga rele');
+		fechadura.writeSync(0);
+		console.log('espera');
+		pause(500);
+		console.log(new Date() + ': desliga rele');
+		fechadura.writeSync(1);
+		///////////////////////////////////////////////
+		res.redirect(303, '/aberta');
+	} else {
+		res.redirect(304, '/porta');
+	}
+});
 
 // Minha página 404
 app.use(function(req, res, next){

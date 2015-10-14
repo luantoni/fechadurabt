@@ -1,5 +1,8 @@
-Este projeto permite controlar a abertura de uma fechadura elétrica usando um Raspberry Pi
+Fechadura Elétrica com RPi
 ====
+
+Este projeto permite controlar a abertura de uma fechadura 
+elétrica usando um Raspberry Pi
 
 A fechadura elétrica é um dispositivo eletro-mecânico
 onde o destravamento da lingueta da fechadura pode ser

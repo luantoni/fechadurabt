@@ -1,3 +1,7 @@
+// Fechadura elétrica
+// Paulo Santos Abreu
+// Outubro de 2015 - versão 1
+//
 var express = require('express');
 var http = require('http');
 var querystring = require('querystring');
@@ -23,7 +27,6 @@ app.use( bodyParser.json() );
 app.use( bodyParser.urlencoded({
 	extended: true
 }));
-// app.use(express.urlencoded());
 
 var Gpio = require('onoff').Gpio // GPIO via Javascript
 
@@ -39,22 +42,24 @@ function pause(miliseconds) {
 	while ((new Date()) - dt <= miliseconds) { /* faça nada */ }
 }
 
-
+// a home page para abrir a porta
 app.get('/porta', function(req, res){
 	res.render('home');
 });
 
+// mostra que a porta foi aberta
 app.get('/aberta', function(req, res){
 	res.render('303');
 });
 
+// mostra a página de 'about'
 app.get('/about', function(req, res){
 	res.render('about');
 });
 
+// captura a senha e decide o que fazer
 app.post('/porta', function(req, res){
 	var senha = req.body.senha;
-//	var senha = req.body.senha;
 	console.log('Recebido '+ senha);
 	if (senha == "senha") { // escolha a senha para abrir a porta
 		///////////////////////////////////////////////
@@ -73,9 +78,7 @@ app.post('/porta', function(req, res){
 
 // Minha página 404
 app.use(function(req, res, next){
-//	res.type('text/palin');
 	res.status(404);
-//	res.send('404 - Página não encontrada');
 	res.render('404');
 });
 
@@ -83,9 +86,7 @@ app.use(function(req, res, next){
 // Minha página 500
 app.use(function(err, req, res, next){
 	console.error(err.stack);
-//	res.type('text/plain');
 	res.status(500);
-//	res.send('500 - Erro no servidor');
 	res.render('500');
 });
 

@@ -1,5 +1,4 @@
-Este projeto permite controlar a abertura de uma fechadura
-elétrica usando um Raspberry Pi
+Este projeto permite controlar a abertura de uma fechadura elétrica usando um Raspberry Pi
 ====
 
 A fechadura elétrica é um dispositivo eletro-mecânico
@@ -11,8 +10,18 @@ O funcionamento de uma fechadura elétrica é mostrado nesse vídeo:
 
 https://www.youtube.com/watch?v=lYu4_FXZVwM
 
+De forma be sucinta, o que vamos fazer é ligar os fios do
+solenoide da fechadura num relê e controlar o relê a partir
+de um programa executando no Raspberry Pi.
 
-Projeto de fechadura com Raspberry Pi e conexão bluetooth (ou Wi-Fi, porque bluetooth no iPhone tá difícil).
+Esse programa será acessado através de uma página Web, ou seja,
+você poderá abrir um navegador qualquer no seu Smartphone,
+acessar a página Web fornecida pelo Raspberry Pi e a partir
+dali controlar a abertura da fechadura
+
+
+
+
 
 Alguns links:
 

@@ -40,10 +40,10 @@ Preparando o Raspberry Pi
 
 3. Instale o script desse projeto
 
-	cd ~
-	git clone http://github.com/abreups/fechadurabt.git
+	    cd ~
+	    git clone http://github.com/abreups/fechadurabt.git
 
-4. Configurando um IP estático:
+4. Configure um IP estático para o seu RPi:
 
 	https://www.modmypi.com/blog/tutorial-how-to-give-your-raspberry-pi-a-static-ip-address
 
@@ -67,70 +67,69 @@ No meu caso estava e eu removi o dhcpcd5:
 
 
 
+Outros links sobre RPi que consultei:
+----
+
+- http://www.rpiblog.com/2012/08/bluetooth-pairing-of-raspberry-pi-with.html
+
+- http://web.inter.nl.net/users/hanscees/bluezhowto.html#whatis
+
+- http://www.heatxsink.com/entry/how-to-pair-a-bluetooth-device-from-command-line-on-linux
 
 
+- Como parear iPhone com RPi via bluetooth usando linha de comando:
 
-Alguns links:
+		http://www.wolfteck.com/projects/raspi/iphone/
 
-http://www.rpiblog.com/2012/08/bluetooth-pairing-of-raspberry-pi-with.html
+- Blynk: aplicativo para conectar iPhone com RPi (via Wi-Fi):
 
-http://web.inter.nl.net/users/hanscees/bluezhowto.html#whatis
+		https://github.com/blynkkk/blynk-library/blob/master/docs/Platforms.md#linux-raspberry-pi
 
-http://www.heatxsink.com/entry/how-to-pair-a-bluetooth-device-from-command-line-on-linux
+- Comandando as portas GPIO via Python:
 
+		http://raspi.tv/2013/rpi-gpio-basics-5-setting-up-and-using-outputs-with-rpi-gpio
 
-Como parea iPhone com RPi via bluetooth usando linha de comando:
+- Abrindo uma porta de garagem com RPi (em Wi-Fi):
 
-http://www.wolfteck.com/projects/raspi/iphone/
+		http://www.driscocity.com/idiots-guide-to-a-raspberry-pi-garage-door-opener/
 
-Aplicativo para conectar iPhone com RPi (via Wi-Fi):
+		Que usa o WebIOPi:
 
-https://github.com/blynkkk/blynk-library/blob/master/docs/Platforms.md#linux-raspberry-pi
+			http://webiopi.trouch.com/index.html
 
-Comandando as portas GPIO via Python:
+		WebIOPi que funciona?
 
-http://raspi.tv/2013/rpi-gpio-basics-5-setting-up-and-using-outputs-with-rpi-gpio
+			http://brian2012class.nfshost.com/wp-content/uploads/2015/04/webiopi.pdf
 
-Abrindo uma porta de garagem com RPi (em Wi-Fi):
+	Veja Class 35:
 
-http://www.driscocity.com/idiots-guide-to-a-raspberry-pi-garage-door-opener/
+			http://brian2012class.nfshost.com/where-are-we/
 
-Que usa o WebIOPi:
+- Projeto que usa node.js com Python:
 
-http://webiopi.trouch.com/index.html
+		http://tylerwowen.github.io/pisensors/
 
-WebIOPi que funciona?
+- Script usando Web.py e GPIO!
 
-http://brian2012class.nfshost.com/wp-content/uploads/2015/04/webiopi.pdf
+		http://newfreshpeace.blogspot.com/2013/01/raspberry-pi-gpio-web-interface-using.html
 
-Veja Class 35:
+		Chamada de função que funcionou:
 
-http://brian2012class.nfshost.com/where-are-we/
+		    exec  = require('child_process').exec
 
-Projeto que usa node.js com Python:
+		https://nodejs.org/docs/v0.2.4/api.html
 
-http://tylerwowen.github.io/pisensors/
+- Lendo pinos com gpio:
 
-Script usando Web.py e GPIO!
+		http://raspberry.io/projects/view/reading-and-writing-from-gpio-ports-from-python/
 
-http://newfreshpeace.blogspot.com/2013/01/raspberry-pi-gpio-web-interface-using.html
+		http://raspi.tv/2013/how-to-use-interrupts-with-python-on-the-raspberry-pi-and-rpi-gpio-part-2
 
-Chamada de função que funcionou:
+		http://raspberrywebserver.com/gpio/using-interrupt-driven-gpio.html
 
-    exec  = require('child_process').exec
+- Links sobre uso do RPi como fonte de PWM (pulse Width Modulation). Fundamental para controlar servo motores:
 
-https://nodejs.org/docs/v0.2.4/api.html
+		https://github.com/sarfata/pi-blaster/
 
-Lendo pinos com gpio:
-
-http://raspberry.io/projects/view/reading-and-writing-from-gpio-ports-from-python/
-
-http://raspi.tv/2013/how-to-use-interrupts-with-python-on-the-raspberry-pi-and-rpi-gpio-part-2
-
-http://raspberrywebserver.com/gpio/using-interrupt-driven-gpio.html
-
-Links sobre uso do RPi como fonte de PWM (pulse Width Modulation). Fundamental para controlar servo motores:
-
-https://github.com/sarfata/pi-blaster/
-
-
+FIM
+===

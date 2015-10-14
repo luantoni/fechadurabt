@@ -38,15 +38,39 @@ Preparando o Raspberry Pi
 
 	http://weworkweplay.com/play/raspberry-pi-nodejs/
 
+3. Instale o script desse projeto
+
+	cd ~
+	git clone http://github.com/abreups/fechadurabt.git
+
+4. Configurando um IP estático:
+
+	https://www.modmypi.com/blog/tutorial-how-to-give-your-raspberry-pi-a-static-ip-address
+
+5. Verifique se o seu RPi está rodando dois clientes DHCP. 
+No meu caso estava e eu removi o dhcpcd5:
+
+	http://superuser.com/questions/924166/dhcp-failure-when-rebooting-rpi-2
+
+5. Coloque o servidor node.js para executar após o boot
+
+	Veja esta página: http://www.raspberry-projects.com/pi/pi-operating-systems/raspbian/auto-running-programs
+
+	No meu caso editei o /etc/rc.local e acrescentei:
+
+	    # Executa o servidor server3.js da fechadura eletrica
+	    cd /home/pi/fechadurabt
+	    /usr/local/bin/node server3.js &
+	    printf "Executando node server3"
+
+	logo antes do final do script.
+
+
 
 
 
 
 Alguns links:
-
-Configurando um IP estático:
-
-https://www.modmypi.com/blog/tutorial-how-to-give-your-raspberry-pi-a-static-ip-address
 
 http://www.rpiblog.com/2012/08/bluetooth-pairing-of-raspberry-pi-with.html
 
@@ -83,10 +107,6 @@ Veja Class 35:
 
 http://brian2012class.nfshost.com/where-are-we/
 
-Versão do node.js pré-compilada para Raspberry Pi:
-
-http://weworkweplay.com/play/raspberry-pi-nodejs/
-
 Projeto que usa node.js com Python:
 
 http://tylerwowen.github.io/pisensors/
@@ -113,22 +133,4 @@ Links sobre uso do RPi como fonte de PWM (pulse Width Modulation). Fundamental p
 
 https://github.com/sarfata/pi-blaster/
 
-Tem um ponto sobre o dhcp client do RPi sobre ter 2 clients rodando:
 
-http://superuser.com/questions/924166/dhcp-failure-when-rebooting-rpi-2
-
-removi o dhcpcd5...
-
-Colocando o servidor node.js para executar após o boot
----
-
-Veja esta página: http://www.raspberry-projects.com/pi/pi-operating-systems/raspbian/auto-running-programs
-
-No meu caso editei o /etc/rc.local e acrescentei:
-
-    # Executa o servidor server3.js da fechadura eletrica
-    cd /home/pi/fechadurabt
-    /usr/local/bin/node server3.js &
-    printf "Executando node server3"
-
-logo antes do final do script.

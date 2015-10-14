@@ -1,4 +1,17 @@
-# fechadurabt
+Este projeto permite controlar a abertura de uma fechadura
+elétrica usando um Raspberry Pi
+====
+
+A fechadura elétrica é um dispositivo eletro-mecânico
+onde o destravamento da lingueta da fechadura pode ser
+feito tanto mecanicamente (com uma chave, por exemplo)
+quanto elétricamente, através de um "botão".
+
+O funcionamento de uma fechadura elétrica é mostrado nesse vídeo:
+
+https://www.youtube.com/watch?v=lYu4_FXZVwM
+
+
 Projeto de fechadura com Raspberry Pi e conexão bluetooth (ou Wi-Fi, porque bluetooth no iPhone tá difícil).
 
 Alguns links:

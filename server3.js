@@ -39,6 +39,24 @@ app.get('/about', function(req, res){
 	res.render('about');
 });
 
+app.post('/porta', function(req, res){
+        var senha = req.body.senha;
+//      var senha = req.body.senha;
+        console.log('Recebido '+ senha);
+        if (senha == "suasenha") {
+                ///////////////////////////////////////////////
+                console.log(new Date() + ': acende');
+                fechadura.writeSync(0);
+                console.log('espera');
+                pause(500);
+                console.log(new Date() + ': apaga');
+                fechadura.writeSync(1);
+                ///////////////////////////////////////////////
+                res.redirect(303, '/aberta');
+        } else {
+                res.redirect(304, '/porta');
+        }
+});
 
 // Minha página 404
 app.use(function(req, res, next){

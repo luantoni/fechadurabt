@@ -97,4 +97,46 @@ fi
 npm install rpi-gpio
 
 
+
+if [ "$PASSOAPASSO" = "s" ]; then
+	echo "--------------------------------------"
+	echo "Instala vim"
+	echo "Continua? (s/N)"
+	echo "---------------"
+	read RESPOSTA
+	test "$RESPOSTA" != "s" && exit
+fi
+sudo apt-get install vim
+
+if [ "$PASSOAPASSO" = "s" ]; then
+	echo "--------------------------------------"
+	echo "Instala pathogen.vim"
+	echo "Continua? (s/N)"
+	echo "---------------"
+	read RESPOSTA
+	test "$RESPOSTA" != "s" && exit
+fi
+mkdir -p ~/.vim/autoload ~/.vim/bundle
+curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+echo "execute pathogen#infect()" >> .vimrc
+echo "syntax on" >> .vimrc
+echo "filetype plugin indent on" >> .vimrc
+
+
+if [ "$PASSOAPASSO" = "s" ]; then
+	echo "--------------------------------------"
+	echo "Instala NERDTree.vim"
+	echo "Continua? (s/N)"
+	echo "---------------"
+	read RESPOSTA
+	test "$RESPOSTA" != "s" && exit
+fi
+cd ~/.vim/bundle
+git clone https://github.com/scrooloose/nerdtree.git
+
+
+
+
+
+
 echo "FIM."
